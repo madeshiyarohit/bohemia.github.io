@@ -2,8 +2,22 @@
     .mid-nav-boxes h1{
         font-size: 40px;
     }
+    .gb-left-box p{
+        font-size: 14px;
+    }
     nav{
         display: none;
+    }
+}
+@media only screen and (max-width:1024px){
+    .gb-boxes{
+        width: 100%;
+    }
+    .gb-left-box{
+        padding: 0;
+    }
+    .gb-left-box p{
+        padding: 0 20px;
     }
 }
 @media only screen and (max-width : 880px){
@@ -24,6 +38,11 @@
     }
     .mid-nav-boxes h1{
         font-size: 25px;
+    }
+}
+@media only screen and (max-width : 650px){
+    .gb-left-box p{
+        padding: 0 10px;
     }
 }
 @media only screen and (max-width : 550px){
@@ -51,6 +70,12 @@
     .mid-nav-boxes-2{
         width: 75%;
         text-align: right;
+    }
+    .gb-right-box, .gb-left-box{
+        width: 100%;
+    }
+    .gb-left-box{
+        padding: 50px 0;
     }
 }
 @media only screen and (max-width : 480px){
