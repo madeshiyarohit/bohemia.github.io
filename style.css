@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+    width: 100%;
+    background-color: #fff6f8;
+}
+.top-nav-margin{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.top-nav-boxes{
+    width: 33.33%;
+}
+.top-nav-boxes-2 span{
+    color: red;
+}
+.top-nav-boxes-2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+.top-nav-boxes-3{
+    text-align: right;
+}
+.top-nav-boxes-3 select{
+    outline: none;
+}
+.mid-nav{
+    width: 90%;
+    margin:0 auto;
+    padding: 20px 0;
+}
+.mid-nav-margin{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mid-nav-boxes-1{
+    display: none;
+}
+.mid-nav-boxes{
+    width: 33.33%;
+}
+.mid-nav-boxes-2{
+    text-align: center;
+}
+
+.mid-nav-boxes h1{
+    font-size: 60px;
+    font-family: 'Licorice', cursive;
+}
+.mid-nav-boxes ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.mid-nav-boxes ul li{
+    padding: 0 20px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+nav ul li p{
+    font-weight: 600;
+    font-size: 14px;
+}
+nav ul li img{
+    height: 10px;
+    width: 10px;
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.header-image img{
+    display: block;
+    width: 100%;
+}
+.topSection{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topBoxes{
+    width: 33.33%;
+}
+.topMarginBoxes{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.topMarginBoxes-2{
+    flex-direction: column-reverse;
+}
+.topSection .topContent h2{
+    text-align: center;
+    padding: 20px 0;
+}
+.topSection .topContent p{
+    padding: 0 10px;
+    text-align: justify;
+}
+ .btn1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.topSection .topContent a:before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    border-bottom: 2px solid #000;
+}
+.topSection .topContent a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+}
+.topSection .imageSection img{
+    width: 100%;
+    display: block;
+}
+.mamaLovingSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.mamaBoxes{
+    width: 33.33%;
+}
+.mamaImageSection{
+    position: relative;
+}
+.mamaImageSection:hover .mamaHover{
+    opacity: 1;
+}
+.mamaHover{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    content: '';
+    transition: 0.5s;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(229, 200, 211, 0.5); */
+    background-color: rgba(206, 157, 127, 0.5);
+}
+.hoverBottom{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%!important;
+    text-align: center;
+}
+.hoverBottom button{
+    background-color: rgba(255, 255, 255,0.2);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+}
+.mamaImageSection img{
+    width: 100%;
+    display: block;
+}
+.mamaMarginBoxes{
+    margin: 10px;
+}
+.mamaHeading{
+    padding: 50px 0;
+    width: 100%;
+    text-align: center;
+}
+.mamaHead h2{
+    font-size: 32px;
+}
+.mamaHead .btn1 a{
+    position: relative;
+}
+.mamaHead .btn1 a:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    border-bottom: 2px solid #000;
+}
+.mamaContentSection{
+    padding-top: 5px;
+}
+.mamaContentSection h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #bbb;
+    text-align: center;
+}
+.mamaContentSection p{
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #bbb; */
+    text-align: center;
+}
+.mamaContentSection h2{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.mamaAbsoluteContent{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.mamaAbsoluteContent .hoverLeftCorner{
+    right: 10%;
+    top: 5%;
+    position: absolute;
+    content: '';
+}
+.mamaAbsoluteContent .hoverLeftCorner img{
+    height: 20px;
+    width: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+    z-index: 99;
+}
+
+button.slick-prev{
+    left: 0%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+button.slick-next{
+    right: 0%;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.slick-prev:hover:before,.slick-next:hover:before{
+    background-color: #bbb;
+}
+.slick-prev:before,.slick-next:before {
+    background-color: lightpink;
+    border-radius: 50%;
+    padding: 10px;
+    color:#000;
+    transition: 0.5s;
+}
