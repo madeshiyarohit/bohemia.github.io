@@ -266,7 +266,9 @@ nav ul li img{
     cursor: pointer;
     z-index: 99;
 }
-
+.mamaSection{
+    padding: 50px 0;
+}
 button.slick-prev{
     left: 0%;
     transform: translateX(-50%);
@@ -286,4 +288,56 @@ button.slick-next{
     padding: 10px;
     color:#000;
     transition: 0.5s;
+}
+.gb-section{
+    background-image: url('./IMAGES/Assets/boys-girls-bg.png');
+    padding: 80px 10px;
+}
+.gb-margin{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.gb-boxes{
+    width: 50%;
+}
+.gb-right-box,.gb-left-box{
+    width: 50%;
+}
+.gb-left-box h2{
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+.gb-left-box h2::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #000;
+}
+.gb-left-box{
+    text-align: center;
+    padding: 0 20px;
+}
+.gb-right-box img{
+    width: 100%;
+    display: block;
+}
+.gb-boxes-margin{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin: 0 10px;
+}
+.gb-boxes-margin-reverse{
+    flex-direction: row-reverse;
 }
