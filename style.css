@@ -8,6 +8,7 @@ body{
 .wrapper{
     width: 100%;
     background-color: #fff6f8;
+    transition: 0.5s;
 }
 .top-nav-margin{
     display: flex;
@@ -33,8 +34,7 @@ body{
     outline: none;
 }
 .mid-nav{
-    width: 90%;
-    margin:0 auto;
+    width: 100%;
     padding: 20px 0;
 }
 .mid-nav-margin{
@@ -73,14 +73,51 @@ body{
 nav{
     width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+
+    position: relative;
 }
 nav ul{
     display: flex;
     list-style: none;
     justify-content: space-around;
 }
+.megaMenu{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff6f8;
+    z-index: -1;
+    height: 300px;
+    transform: scale(0);
+    transform: translateY(-30px);
+    transition: 0.5s;
+    opacity: 0;
+}
+.megaMenuMargin{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.megaMenuMargin ul{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.megaMenuMargin ul li{
+    padding: 10px 0;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
 nav ul li{
+    padding: 20px 0;
+    cursor: pointer;
+}
+nav ul li div{
     display: flex;
     align-items: center;
 }
@@ -323,6 +360,7 @@ button.slick-next{
 }
 .gb-left-box{
     text-align: center;
+    
 }
 .gb-right-box img{
     width: 100%;
@@ -339,4 +377,323 @@ button.slick-next{
 }
 .gb-boxes-margin-reverse{
     flex-direction: row-reverse;
+}
+.mainProductSection{
+    width: 100%;
+}
+.productMainMarginBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.ourProduct{
+    padding: 50px 0;
+}
+.productBoxes{
+    width: 25%;
+}
+.productMarginBox{
+    margin: 20px;
+}
+.imageBox img{
+    width: 100%;
+    display: block;
+}
+.productBoxes .ContentBox h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #bbb;
+    text-align: center;
+}
+.productBoxes .ContentBox p{
+    font-size: 16px;
+    font-weight: 600;
+    /* color: #bbb; */
+    text-align: center;
+}
+.productBoxes .ContentBox h2{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+.productHead{
+    padding: 20px 0;
+    text-align: center;
+}
+.productHead h2 {
+    font-size: 32px;
+    padding: 20px 0;
+}
+.productHead a{
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.productHead  a:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #000;
+}
+.ourBlogSection{
+    width: 100%;
+}
+.blogMargin{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+.blogBoxes{
+    width: 50%;
+    height: 100%!important;
+}
+.innerBlogBox{
+    height: 100%!important;
+}
+.blogMarginBoxes{
+    display: flex;
+    flex-direction: column;
+}
+.innerBlogMargin{
+    display: flex;
+    margin: 10px;
+    background-color: #fff;
+}
+.innerBlogMargin .imageBox,.innerBlogMargin .contentBox{
+    width: 50%;
+}
+.innerBlogMargin-2{
+    flex-direction: column; 
+}
+.innerBlogMargin-2 .imageBox,.innerBlogMargin-2 .contentBox{
+    width: 100%;
+}
+.ourBlogSection{
+    background-image: url('./IMAGES/Assets/boys-girls-bg.png');
+    padding: 50px 20px;
+}
+.ourBlogHead{
+    width: 100%;
+    padding: 30px 0;
+    text-align: center;
+}
+.ourBlogHead h2{
+    font-size: 32px;
+}
+.ourBlogHead a{
+    position: relative;
+    cursor: pointer;
+}
+.ourBlogHead a:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+    border-bottom: 2px solid #000;
+}
+.innerBlogMargin .contentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+}
+.innerBlogMargin .contentBox h3{
+    font-size: 16px;
+    color: #ddd;
+}
+.innerBlogMargin .contentBox h2{
+    font-size: 20px;
+    padding: 5px 0;
+}
+.innerBlogMargin .contentBox a{
+    position: relative;
+    margin: 5px 0;
+}
+.innerBlogMargin .contentBox a:before{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    border-bottom: 2px solid #000;
+}
+.innerBlogMargin-2 .contentBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0!important;
+    text-align: center;
+    /* padding: 80px 0!important; */
+} 
+.innerBlogMargin-2 .contentBox p{
+    padding: 0 20px;
+} 
+.instaMarginDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.instaMarginDiv .instaBoxes{
+    width: 25%;
+}
+.instaMarginDiv .instaBoxes img{
+    width: 100%;
+    display: block;
+}
+.shopOurInsta{
+    width: 100%;
+}
+.shopOurInsta .instaHead{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+}
+.shopOurInsta .instaHead h2{
+    font-size: 32px;
+    padding: 10px 0;
+}
+.shopOurInsta .instaHead a{
+    position: relative;
+}
+.shopOurInsta .instaHead a:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #000;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+}
+.instaBoxMargin{
+    margin: 5px;
+}
+.footeSection{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #fff6f8;
+}
+.footerMargin{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.footerBoxes{
+    width: 25%;
+    padding: 20px 0;
+}
+.footerBoxes ul{
+    list-style: none;
+    width: 50%;
+}
+.footerBoxes-2,.footerBoxes-3{
+    display: flex;
+}
+.footerBoxes-2 h2,.footerBoxes-3 h2,.footerBoxes-4 h2{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+.footerBoxes-1 h2{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Licorice', cursive;
+}
+.footerBoxes-1 p{
+    padding: 0 20px 0 0;
+    font-size: 14px;
+}
+.footerBoxes ul li,.footerBoxes-4 p{
+    font-size: 14px;
+    line-height: 2.0;
+}
+.adddress{
+    line-height: 1.2!important;
+}
+.footerBoxes-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerBoxes-4 form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    width: 80%;
+}
+.footerBoxes-4 form input{
+    border-radius: 15px 0 0 15px;
+    width: 75%;
+    font-size: 14px;
+    padding: 3px 5px;
+    outline: none;
+}
+.footerBoxes-4 form button{
+    width: 25%;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+.mid-nav-boxes.mid-nav-boxes-1 {
+    padding-left: 10px;
+}
+.sidePushNav{
+    position: fixed;
+    width: 0px;
+    height: 100vh;
+    top: 0;
+    left: -200px;
+    z-index: 999;
+    background-color: #fff;
+    transition: 0.5s;
+}
+/* .sidePushNavMargin{
+    margin: 20px;
+} */
+.sidePushNavMargin ul{
+    list-style: none;
+}
+.sidePushNavMargin ul li{
+    padding: 15px 0;
+    transition: 0.5s;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.sidePushNavMargin ul li:hover{
+    background-color: #fff6f8;
+}
+.closeImage img{
+    height: 20px;
+    width: 20px;
+    /* position: absolute; */
+    margin:10% 80% 0% ;
+    cursor: pointer;
+}
+.closeImage{
+    width: 100%;
+    /* position: relative; */
+}
+.sidePushNavMargin h3{
+    padding: 10px;
 }
