@@ -26,11 +26,81 @@
         <div class="sidePushNavMargin">
             <h3>Side Nav Items</h3>
             <ul>
-                <li>This is List 1</li>
-                <li>This is List 2</li>
-                <li>This is List 3</li>
-                <li>This is List 4</li>
-                <li>This is List 5</li>
+                <li>
+                    <div>
+                        <p>This is List 1</p>
+                        <img src="./IMAGES/Assets/header/btm-arw.png" alt="Image is Here !!!">
+                    </div>
+                    <section>
+                        <ul>
+                            <li>List 1 Item No 1</li>
+                            <li>List 1 Item No 2</li>
+                            <li>List 1 Item No 3</li>
+                            <li>List 1 Item No 4</li>
+                            <li>List 1 Item No 5</li>
+                        </ul>
+                    </section>
+                </li>
+                <li>
+                    <div>
+                        <p>This is List 2</p>
+                        <img src="./IMAGES/Assets/header/btm-arw.png" alt="Image is Here !!!">
+                    </div>
+                    <section>
+                        <ul>
+                            <li>List 2 Item No 1</li>
+                            <li>List 2 Item No 2</li>
+                            <li>List 2 Item No 3</li>
+                            <li>List 2 Item No 4</li>
+                            <li>List 2 Item No 5</li>
+                        </ul>
+                    </section>
+                </li>
+                <li>
+                    <div>
+                        <p>This is List 3</p>
+                        <img src="./IMAGES/Assets/header/btm-arw.png" alt="Image is Here !!!">
+                    </div>
+                    <section>
+                        <ul>
+                            <li>List 3 Item No 1</li>
+                            <li>List 3 Item No 2</li>
+                            <li>List 3 Item No 3</li>
+                            <li>List 3 Item No 4</li>
+                            <li>List 3 Item No 5</li>
+                        </ul>
+                    </section>
+                </li>
+                <li>
+                   <div>
+                        <p>This is List 4</p>
+                        <img src="./IMAGES/Assets/header/btm-arw.png" alt="Image is Here !!!">
+                   </div>
+                   <section>
+                    <ul>
+                        <li>List 4 Item No 1</li>
+                        <li>List 4 Item No 2</li>
+                        <li>List 4 Item No 3</li>
+                        <li>List 4 Item No 4</li>
+                        <li>List 4 Item No 5</li>
+                    </ul>
+                   </section>
+                </li>
+                <li>
+                    <div>
+                        <p>This is List 5</p>
+                        <img src="./IMAGES/Assets/header/btm-arw.png" alt="Image is Here !!!">
+                    </div>
+                    <section>
+                        <ul>
+                            <li>List 5 Item No 1</li>
+                            <li>List 5 Item No 2</li>
+                            <li>List 5 Item No 3</li>
+                            <li>List 5 Item No 4</li>
+                            <li>List 5 Item No 5</li>
+                        </ul>
+                    </section>
+                </li>
             </ul>
         </div>
     </div>
@@ -1080,6 +1150,21 @@
             $(".closeImage img").click(function(){
                 $(".sidePushNav").css({"width":"0px","left":"-200px"});
                 $(".wrapper").css({'margin-left':"0px"});
+            });
+            var clickCount = 0;
+            $(".sidePushNavMargin ul li").click(function(){
+                clickCount++;
+                var finalCount = function(num){
+                    return (num % 2 === 0) ? true : false;
+                    console.log(finalCount);
+                }
+                if(finalCount(clickCount) === true){
+                    $(this).find('section').css({"display":"none"});
+                }
+                else if (finalCount(clickCount) === false){
+                    $(this).find('section').css({"display":"block"});
+                    // $('.sidePushNavMargin ul li section').css({"display":"block"});
+                }
             });
 
         })
