@@ -679,8 +679,26 @@ button.slick-next{
     transition: 0.5s;
     padding-left: 15px;
     cursor: pointer;
+    
 }
-.sidePushNavMargin ul li:hover{
+.sidePushNavMargin ul li div{
+    position: relative;
+    width: 100%;
+}
+.sidePushNavMargin ul li div::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    transition: 0.5s;
+    border-bottom: 2px solid #000;
+}
+.sidePushNavMargin ul li div:hover::before{
+    width: 100%;
+}
+.sidePushNavMargin ul li section li:hover{
     background-color: #fff6f8;
 }
 .closeImage img{
@@ -696,4 +714,16 @@ button.slick-next{
 }
 .sidePushNavMargin h3{
     padding: 10px;
+}
+.sidePushNavMargin ul li img{
+    height: 15px;
+    width: 15px;
+    padding: 0 5px;
+}
+.sidePushNavMargin ul li div{
+    display: flex;
+    align-items: center;
+}
+.sidePushNavMargin ul li section{
+    display: none;
 }
