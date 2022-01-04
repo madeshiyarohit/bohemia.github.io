@@ -1,4 +1,12 @@
 @media only screen and (max-width:1260px){
+     .mid-nav-boxes-1{
+        display: block;
+        width: 25%;
+        cursor: pointer;
+    }
+    .mid-nav-boxes-3{
+        display: none;
+    }
     .mid-nav-boxes h1{
         font-size: 40px;
     }
@@ -9,9 +17,17 @@
         display: none;
     }
 }
+@media only screen and (max-width:1080px){
+    .footerBoxes{
+        width: 50%;
+    }
+}
 @media only screen and (max-width:1024px){
     .gb-boxes{
         width: 100%;
+    }
+    .instaMarginDiv .instaBoxes{
+        width: 50%;
     }
     .gb-left-box{
         padding: 0;
@@ -52,6 +68,9 @@
     .top-nav-boxes-2 p{
         font-size: 14px;
     }
+    .instaMarginDiv .instaBoxes{
+        width: 100%;
+    }
     .top-nav-boxes-3 select{
         font-size: 14px!important;
     }
@@ -59,14 +78,8 @@
     .topMarginBoxes-2{
         flex-direction: column;
     }
-    .mid-nav-boxes-3{
-        display: none;
-    }
-    .mid-nav-boxes-1{
-        display: block;
-        width: 25%;
-        cursor: pointer;
-    }
+    
+   
     .mid-nav-boxes-2{
         width: 75%;
         text-align: right;
@@ -76,6 +89,9 @@
     }
     .gb-left-box{
         padding: 50px 0;
+    }
+    .footerBoxes{
+        width: 100%;
     }
 }
 @media only screen and (max-width : 480px){
@@ -87,5 +103,8 @@
     }
     .top-nav-boxes-3 select{
         font-size: 12px!important;
+    }
+    .footerMargin{
+        text-align: center;
     }
 }
